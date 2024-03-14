@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(9.0),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.indigo.shade50,
+                color: Color.fromARGB(238, 255, 242, 242),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
@@ -104,10 +104,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                  Expanded(
-                    child: Image.network(
-                      photoList[index],
-                      fit: BoxFit.fill,
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 260,
+                    decoration:  BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image:
+                            NetworkImage(photoList[index],),
+                      ),
                     ),
                   ),
                   Padding(
