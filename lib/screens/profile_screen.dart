@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:modul_exam/screens/home_screen.dart';
 import 'package:modul_exam/screens/main_screen.dart';
 
@@ -86,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
                           padding: const EdgeInsets.only(right: 8.0),
                           child: InkWell(
                             onTap: () {},
-                            child: const Icon(Icons.notification_add),
+                            child: const Icon(Icons.notifications),
                           ),
                         ),
                       ],
@@ -105,7 +106,7 @@ class ProfileScreen extends StatelessWidget {
                     CircleAvatar(
                       maxRadius: 140,
                       backgroundImage:
-                          NetworkImage("https://picsum.photos/300"),
+                          NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHD9caZiw7QZPtOwY6OZTCA59O-ZJL3vLmQnIXoH5Y7-BJzy71WivrESIYcndiQsWqGhk&usqp=CAU"),
                     ),
                   ],
                 ),
@@ -234,7 +235,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 150,
-                  child:Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVB9i2TmeHNkzHcneQrT3BR83VqmuyPDvjg&usqp=CAU") ,
+                  child:Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIZcAwLAFIM6awet1QiMkHVyx3jTo3DpX1WgDoxxQjWsHVZRmMbnAeEs8UMius7lTMvQ&usqp=CAU") ,
                 ),
               ],
               

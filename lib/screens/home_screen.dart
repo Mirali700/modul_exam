@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(9.0),
             child: Container(
               decoration: BoxDecoration(
-                color: Color.fromARGB(238, 255, 242, 242),
+                color: const Color.fromARGB(238, 255, 242, 242),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                      
                       Padding(
-                        padding: EdgeInsets.only(left: 200),
+                        padding: EdgeInsets.only(left: 180),
                         child: Icon(Icons.more_vert),
                       ),
                     ],
