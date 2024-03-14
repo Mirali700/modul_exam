@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_exam/screens/home_screen.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({
@@ -26,15 +27,21 @@ class IntroScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(top:200),
                 child: Image.asset(height: 250, "assets/images/logo_500px.jpg"),
               ),
-              const Row(
+               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "Joint our dailly Task!",
-                    style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.bold,
-                    ),
-                    
-                  ),
+                  GradientText(
+    'Join our dailly Tasks!',
+    style: const TextStyle(
+        fontSize: 30.0,
+        fontWeight: FontWeight.bold,
+    ),
+    colors: const [
+        Color.fromARGB(255, 255, 181, 45),
+        Color.fromARGB(255, 125, 209, 254),
+        Color.fromARGB(255, 39, 205, 255),
+    ],
+),
                 ],
               ),
               const Row(
@@ -55,8 +62,11 @@ class IntroScreen extends StatelessWidget {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: const Color.fromARGB(255, 7, 164, 255),
+                      borderRadius: BorderRadius.circular(5),
+                      gradient: const LinearGradient(colors: [
+                        Color.fromARGB(255, 152, 211, 255),
+                        Color.fromARGB(255, 13, 186, 255),
+                      ],),
                     ),
                     
                     child: TextButton(onPressed: (){
@@ -67,7 +77,7 @@ class IntroScreen extends StatelessWidget {
                 ),
               );
                     }, child: const Text("Join SocialTask",
-                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.black),
                     ),),
                   ),
                     
